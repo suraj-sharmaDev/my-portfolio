@@ -1,5 +1,6 @@
 import "./App.css";
 import About from "./components/About";
+import Footer from "./components/Footer";
 import Navigation from "./components/Navigation";
 import Projects from "./components/Projects";
 import Scene from "./components/Scene";
@@ -11,6 +12,7 @@ function App() {
       <Scene />
       <About />
       <Projects />
+      <Footer />
     </div>
   );
 }

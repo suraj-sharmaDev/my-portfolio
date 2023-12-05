@@ -11,6 +11,8 @@ import react from "./react.svg";
 import redux from "./redux.svg";
 import tailwindcss from "./tailwindcss.svg";
 import typescript from "./typescript.svg";
+import linkedin from "./linkedin.svg";
+import gmail from "./gmail.svg";
 
 export {
   css,
@@ -26,4 +28,6 @@ export {
   redux,
   tailwindcss,
   typescript,
+  linkedin,
+  gmail,
 };
