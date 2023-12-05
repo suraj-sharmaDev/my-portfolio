@@ -16,7 +16,7 @@ export default function Scene() {
   const [swampScale, swampPosition, swampRotation] = adjustSwampForScreenSize();
 
   return (
-    <section className="w-full h-full relative">
+    <section className="w-full h-full relative" id="home">
       <Canvas
         className="w-full h-full bg-transparent"
         camera={{ near: 0.1, far: 1000 }}
