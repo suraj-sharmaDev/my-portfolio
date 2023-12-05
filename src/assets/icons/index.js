@@ -13,6 +13,8 @@ import tailwindcss from "./tailwindcss.svg";
 import typescript from "./typescript.svg";
 import linkedin from "./linkedin.svg";
 import gmail from "./gmail.svg";
+import arrow from "./arrow.svg";
+import gear from "./gear.svg";
 
 export {
   css,
@@ -30,4 +32,6 @@ export {
   typescript,
   linkedin,
   gmail,
+  arrow,
+  gear,
 };
