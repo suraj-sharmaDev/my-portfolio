@@ -3,6 +3,7 @@ import { Suspense } from "react";
 import Loader from "./Loader";
 import SwampModel from "./models/SwampModel";
 import SkyModel from "./models/SkyModel";
+import PopupInfo from "./PopupInfo";
 
 export default function Scene() {
   const adjustSwampForScreenSize = () => {
@@ -17,6 +18,10 @@ export default function Scene() {
 
   return (
     <section className="w-full h-full relative" id="home">
+      <div className="absolute top-28 left-0 right-0 z-10 flex items-center justify-center">
+        <PopupInfo />
+      </div>
+
       <Canvas
         className="w-full h-full bg-transparent"
         camera={{ near: 0.1, far: 1000 }}
