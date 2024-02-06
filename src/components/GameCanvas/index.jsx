@@ -15,13 +15,7 @@ export default function GameCanvas() {
       </div>
       <canvas ref={canvasRef} className="gameCanvas" />
       {playerImage.getAllImages().map((img) => (
-        <img
-          src={img}
-          key={img}
-          id={img}
-          className="hiddenImage"
-          loading="lazy"
-        />
+        <img src={img} key={img} id={img} style={{ display: "none" }} />
       ))}
     </section>
   );
