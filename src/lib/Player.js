@@ -4,9 +4,9 @@ import { Sitting, Running, Jumping, Falling } from "./PlayerState";
 export default class Player {
   constructor(game) {
     this.game = game;
-    this.width = 100;
-    this.height = 100;
-    this.x = 0;
+    this.width = 150;
+    this.height = 150;
+    this.x = this.game.width / 2 - this.width;
     this.y = this.game.height - this.height - this.game.groundMargin;
     this.vy = 0;
     this.playerWeight = 1;
@@ -20,7 +20,7 @@ export default class Player {
       new Jumping(this),
       new Falling(this),
     ]; // player state such as sitting, running, jumping
-    this.currentState = this.states[0]; // takes the first value from states
+    this.currentState = this.states[1]; // takes the first value from states
     this.currentState.enter();
     this.image = playerImage.getPlayerStateImage(
       this.currentState.getStateName(),
@@ -77,8 +77,6 @@ export default class Player {
   }
 
   draw(context) {
-    // this.getImageToDraw();
-    // console.log(this.getImageToDraw());
     // get image to be drawn
     context.drawImage(
       this.getImageToDraw(),

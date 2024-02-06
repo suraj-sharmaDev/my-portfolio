@@ -10,13 +10,11 @@ export default class InputHandler {
       ) {
         this.keys.push(cur);
       }
-      console.log(this.keys);
     });
 
     window.addEventListener("keyup", (e) => {
       const cur = e.key;
       this.keys.splice(this.keys.indexOf(cur), 1);
-      console.log(this.keys);
     });
   }
 }

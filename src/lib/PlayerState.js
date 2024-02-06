@@ -23,7 +23,6 @@ export class Sitting extends State {
     // handle updates
     this.player.maxImages =
       playerImage.getPlayerStateImage(this.getStateName()).length - 1;
-    console.log("enetered sitting", this.player.maxImages);
   }
   handleInput(inputs) {
     if (inputs.includes("ArrowRight") || inputs.includes("ArrowLeft")) {
@@ -45,7 +44,6 @@ export class Running extends State {
     // handle updates
     this.player.maxImages =
       playerImage.getPlayerStateImage(this.getStateName()).length - 1;
-    console.log("enetered running");
   }
   handleInput(inputs) {
     if (inputs.includes("ArrowDown")) {
@@ -69,7 +67,6 @@ export class Jumping extends State {
     // handle updates
     this.player.maxImages =
       playerImage.getPlayerStateImage(this.getStateName()).length - 1;
-    console.log("enetered Jumping");
   }
   handleInput(inputs) {
     if (this.player.vy > this.player.playerWeight) {
@@ -91,7 +88,6 @@ export class Falling extends State {
     // handle updates
     this.player.maxImages =
       playerImage.getPlayerStateImage(this.getStateName()).length - 1;
-    console.log("enetered FALLING");
   }
   handleInput(inputs) {
     if (this.player.isPlayerOnGround()) {
