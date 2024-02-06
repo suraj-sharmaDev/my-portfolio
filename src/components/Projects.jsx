@@ -28,6 +28,7 @@ const Projects = () => {
                   src={project.iconUrl}
                   alt="threads"
                   className="w-1/2 h-1/2 object-contain"
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -50,6 +51,7 @@ const Projects = () => {
                   src={arrow}
                   alt="arrow"
                   className="w-4 h-4 object-contain"
+                  loading="lazy"
                 />
               </div>
             </div>

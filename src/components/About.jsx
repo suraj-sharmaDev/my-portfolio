@@ -25,13 +25,14 @@ export default function About() {
 
         <div className="flex flex-wrap gap-12 mt-16">
           {skills.map((skill, idx) => (
-            <div className="block-container w-20 h-20">
+            <div className="block-container w-20 h-20" key={idx.toString()}>
               <div className="btn-back rounded-xl" />
               <div className="btn-front rounded-xl flex justify-center items-center">
                 <img
                   src={skill.imageUrl}
                   alt={skill.name}
                   className="w-1/2 h-1/2 object-contain"
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -62,6 +63,7 @@ export default function About() {
                       src={experience.icon}
                       alt={experience.company_name}
                       className="w-[60%] h-[60%] object-contain"
+                      loading="lazy"
                     />
                   </div>
                 }
