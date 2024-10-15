@@ -12,10 +12,8 @@ const Projects = () => {
       </h1>
 
       <p className="text-slate-500 mt-2 leading-relaxed">
-        I have participated in many projects over the years, but these are the
-        ones that I am most proud of. All of them are open-source, so you are
-        welcome to check out the code and contribute your suggestions for
-        improvement. I appreciate your collaboration!
+        I’ve worked on several exciting hobby projects over the years, and these
+        are the ones I’m most proud of.
       </p>
 
       <div className="flex flex-wrap my-20 gap-16">
@@ -45,7 +43,7 @@ const Projects = () => {
                   rel="noopener noreferrer"
                   className="font-semibold text-blue-600"
                 >
-                  Github Link
+                  Link
                 </a>
                 <img
                   src={arrow}

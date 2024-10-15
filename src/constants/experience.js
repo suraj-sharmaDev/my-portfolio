@@ -1,7 +1,7 @@
 import { crypt4bits, freelancer, emvigo } from "../assets/images";
 export const experiences = [
   {
-    title: "React/React Native/ Next.js Developer",
+    title: "Technology Lead",
     company_name: "Emvigo Technologies",
     icon: emvigo,
     iconBg: "#ffffff",
